@@ -1,0 +1,36 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.head {
+  background-color: #ccc;
+  /* width: 100%; */
+
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-bottom: 1px solid aliceblue;
+  padding: 15px;
+}
+
+.content {
+  font-size: 1rem;
+  background-color: aliceblue;
+  color: black;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+
+.content > div {
+  padding: 15px;
+}
+
+.sign {
+  font-size: 1.2rem;
+}
