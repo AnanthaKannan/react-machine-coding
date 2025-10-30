@@ -72,11 +72,12 @@ const FileExplore: FC = () => {
     return (
       <div className="folder-container" key={item.id}>
         <div className="folder" onClick={() => handleFolderClick(item.id)}>
-          📁 {item.name}
+          {isActive ? "📂" : "📁"} {item.name}
         </div>
 
         {item.children?.map((child) => (
           <div
+            className="file-container"
             style={{
               maxHeight: isActive ? "500px" : "0px",
               overflow: "hidden",
