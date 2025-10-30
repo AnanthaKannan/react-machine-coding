@@ -1,0 +1,24 @@
+#fe {
+  background-color: #ccc;
+  max-width: 300px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 8px #a8a8a8;
+  padding: 15px;
+}
+
+#fe .folder {
+  font-weight: bolder;
+  color: rgb(43, 43, 43);
+  cursor: pointer;
+}
+
+#fe .file {
+  color: rgb(43, 43, 43);
+  font-weight: 500;
+}
+
+#fe .folder-container .file {
+  border-left: 2px dashed rgb(150, 149, 149);
+  padding: 5px 10px;
+  margin: 0px 12px;
+}
