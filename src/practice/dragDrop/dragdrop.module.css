@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  background-color: rgb(199, 202, 215);
+  border-radius: 5px;
+}
+
+.col {
+  height: 350px;
+  background-color: #9fc9e2;
+  width: 100%;
+  margin: 8px;
+  border-radius: 5px;
+}
+
+.head {
+  background-color: rgb(54, 97, 217);
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 8px;
+}
+
+.todo {
+  background-color: rgb(233, 237, 240);
+  margin: 8px;
+  border-left: 4px solid rgb(54, 97, 217);
+  padding: 9px 12px;
+  border-radius: 5px;
+  color: black;
+  font-size: 1rem;
+  cursor: grab;
+}

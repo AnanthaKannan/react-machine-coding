@@ -4,3 +4,13 @@
 ------------ some type -----------
 HTMLDivElement
 FC
+
+
+### Drag drop
+```ts
+// this should be prevent default, otherwise onDrop will not work
+// it will prevent dropping the target element
+const handleDragOver = (e: DragEvent) => {
+    e.preventDefault();
+  };
+```

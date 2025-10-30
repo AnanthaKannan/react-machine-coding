@@ -1,0 +1,77 @@
+.trello-board {
+  display: flex;
+  gap: 1rem;
+  padding: 1.25rem;
+  background: linear-gradient(180deg, #f7fbff 0%, #ffffff 100%);
+}
+
+.trello-column {
+  width: 300px;
+  background: #e8f4ff; /* soft column background */
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  min-height: 500px; /* increase height */
+  max-height: 90vh;
+  overflow: auto;
+  transition: box-shadow 0.15s ease, transform 0.15s ease, background 0.15s ease;
+}
+
+.trello-column-header {
+  font-weight: 800;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #0b63b7; /* deep blue header */
+  color: #fff; /* header text white */
+  border-radius: 6px;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+}
+
+.trello-column-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.trello-card {
+  background: #ffffff;
+  color: #000; /* ensure black text */
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(2, 6, 23, 0.06);
+  cursor: grab;
+  border-left: 4px solid #0b63b7; /* accent */
+  transition: transform 0.12s ease, box-shadow 0.12s ease, opacity 0.12s ease;
+}
+
+.trello-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(2, 6, 23, 0.08);
+}
+
+.trello-card:active {
+  cursor: grabbing;
+  opacity: 0.95;
+}
+
+/* Visual style for the dragged card */
+.trello-card.dragging {
+  opacity: 0.6;
+  transform: scale(0.985);
+  box-shadow: 0 10px 30px rgba(2, 6, 23, 0.12);
+}
+
+/* Highlight when a draggable item is over the column */
+.trello-column.drag-over {
+  background: #d0eaff; /* stronger highlight */
+  box-shadow: 0 8px 20px rgba(11, 99, 183, 0.08);
+  transform: translateY(-3px);
+  border: 2px dashed rgba(11, 99, 183, 0.25);
+}
+
+/* Slight visual hint for body when drag over */
+.trello-column.drag-over .trello-column-body {
+  gap: 12px;
+}

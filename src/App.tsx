@@ -1,13 +1,15 @@
 import React from "react";
 // import SearchBox from "./searchbox/SearchBox";
-import { Accordion } from "./accordian/Accordion";
-import AccordionV1 from "./practice/AccordionV1";
+import TrelloBoard from "./trello/TrelloBoard";
+import DragDrop from "./practice/dragDrop/dragDrop";
+import PercentageLoader from "./practice/loader/PercentageLoad";
 
 const App: React.FC = () => {
   return (
-    <div>
-      <Accordion />
-      <AccordionV1 />
+    <div style={{ padding: 16 }}>
+      <PercentageLoader />
+      {/* <DragDrop /> */}
+      {/* <TrelloBoard /> */}
     </div>
   );
 };
