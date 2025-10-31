@@ -1,0 +1,57 @@
+#tp {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+#tp button {
+  background-color: #007bff;
+  padding: 15px 45px;
+  border: 0px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#tp button:hover {
+  box-shadow: 2px 4px 8px #57a4f6;
+  transition: box-shadow 0.5s linear;
+}
+
+#tp .tool-tip-container {
+  position: relative;
+}
+
+#tp .message {
+  position: absolute;
+  background-color: #57a4f6;
+  padding: 5px 0px;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+  z-index: 100;
+  display: none;
+}
+
+#tp .top {
+  bottom: 120%;
+  display: block;
+}
+
+#tp .bottom {
+  top: 120%;
+  display: block;
+}
+
+#tp .left {
+  right: 120%;
+  top: 10%;
+  display: block;
+}
+
+#tp .right {
+  left: 120%;
+  top: 10%;
+  display: block;
+}

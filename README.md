@@ -14,3 +14,13 @@ const handleDragOver = (e: DragEvent) => {
     e.preventDefault();
   };
 ```
+
+## Getting Mouse Position
+```ts
+ const handleMouseEnter = (e: MouseEvent<HTMLDivElement>) => {
+    const btn = e.currentTarget.getBoundingClientRect();
+    const left = btn.left - e.clientX;
+    const right = btn.right - e.clientX;
+    const top = btn.top - e.clientY;
+    const bottom = btn.bottom - e.clientY;
+```

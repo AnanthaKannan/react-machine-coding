@@ -5,11 +5,12 @@ import DragDrop from "./practice/dragDrop/dragDrop";
 import PercentageLoader from "./practice/loader/percentageLoader/PercentageLoad";
 import CircleLoader from "./practice/loader/circleLoader/CircleLoader";
 import FileExplore from "./practice/fileExplor/FileExplore";
+import Tooltip from "./practice/tooltip/Tooltip";
 
 const App: React.FC = () => {
   return (
     <div style={{ padding: 16 }}>
-      <FileExplore />
+      <Tooltip />
       {/* <CircleLoader /> */}
       {/* <PercentageLoader /> */}
       {/* <DragDrop /> */}
