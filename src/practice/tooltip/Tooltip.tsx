@@ -8,7 +8,10 @@ interface TpParams {
   children: ReactNode;
 }
 
-const Tp: FC<TpParams> = ({ message = "I am here", children }) => {
+const Tp: FC<TpParams> = ({
+  message = "I am here sdf sdfs dsfsdf",
+  children,
+}) => {
   const [classPosition, setClassPosition] = useState("");
 
   const handleMouseEnter = (e: MouseEvent<HTMLDivElement>) => {
