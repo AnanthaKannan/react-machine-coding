@@ -12,11 +12,14 @@
   border: 0px;
   border-radius: 5px;
   cursor: pointer;
+  transform: scale(1);
+  transition: transform 0.5s ease;
 }
 
 #tp button:hover {
   box-shadow: 2px 4px 8px #57a4f6;
-  transition: box-shadow 0.5s linear;
+  transform: scale(1.01);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
 #tp .tool-tip-container {
@@ -26,16 +29,19 @@
 #tp .message {
   position: absolute;
   background-color: #57a4f6;
-  padding: 5px 0px;
+  padding: 5px 10px;
   border-radius: 5px;
   text-align: center;
   z-index: 100;
   display: none;
+  white-space: nowrap;
 }
 
 #tp .top {
   bottom: 120%;
   display: block;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 #tp .bottom {

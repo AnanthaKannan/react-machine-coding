@@ -24,3 +24,9 @@ const handleDragOver = (e: DragEvent) => {
     const top = btn.top - e.clientY;
     const bottom = btn.bottom - e.clientY;
 ```
+
+## White space - wrap
+```white-space: nowrap;``` is a CSS declaration that controls how whitespace and line breaks are handled within an element's text content
+
+
+## transform: translateX(-50%);
