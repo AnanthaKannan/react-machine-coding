@@ -6,11 +6,13 @@ import PercentageLoader from "./practice/loader/percentageLoader/PercentageLoad"
 import CircleLoader from "./practice/loader/circleLoader/CircleLoader";
 import FileExplore from "./practice/fileExplor/FileExplore";
 import Tooltip from "./practice/tooltip/Tooltip";
+import Calculator from "./practice/calculator/Calculator";
 
 const App: React.FC = () => {
   return (
     <div style={{ padding: 16 }}>
-      <Tooltip />
+      <Calculator />
+      {/* <Tooltip /> */}
       {/* <CircleLoader /> */}
       {/* <PercentageLoader /> */}
       {/* <DragDrop /> */}
