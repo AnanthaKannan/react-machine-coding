@@ -1,0 +1,11 @@
+Animation Engine
+│
+├── Code Panel
+├── Memory Panel
+├── Variables Panel
+├── SVG Renderer
+├── Timeline
+├── Play / Pause
+├── Next / Previous
+├── Voice-over Script
+└── Captions

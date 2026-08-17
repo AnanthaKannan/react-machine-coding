@@ -1,4 +1,4 @@
-import { useCallback, useMemo, useState, useRef } from "react";
+import { useState, useRef } from "react";
 import type { FC, DragEvent } from "react";
 import style from "./dragdrop.module.css";
 
@@ -53,10 +53,10 @@ const DragDrop: FC = () => {
     const targetColIdx = columns.findIndex((col) => col.id === targetColId);
 
     const taksObj = columns[currentColIdx].task.find(
-      (item) => item.id === taskId
+      (item) => item.id === taskId,
     );
     const restTask = columns[currentColIdx].task.filter(
-      (item) => item.id !== taskId
+      (item) => item.id !== taskId,
     );
     columns[currentColIdx].task = [...restTask];
     columns[targetColIdx].task.push(taksObj!);
